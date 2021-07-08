@@ -311,5 +311,7 @@ npm run build
 
 ## References
 
+Updated by Jimbo Marsh
+
 - [RFC 5545: Internet Calendaring and Scheduling Core Object Specification (iCalendar)](http://tools.ietf.org/html/rfc5545)
 - [iCalendar Validator](http://icalendar.org/validator.html#results)
