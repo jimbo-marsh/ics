@@ -51,6 +51,7 @@ export default function formatEvent(attributes = {}) {
   icsFormat += foldLine(`METHOD:${method}`) + '\r\n'
   icsFormat += calName ? (foldLine(`X-WR-CALNAME:${calName}`) + '\r\n') : ''
   icsFormat += `X-PUBLISHED-TTL:PT1H\r\n`
+  icsFormat += "REFRESH-INTERVAL;VALUE=DURATION:P1H\r\n"
   icsFormat += 'BEGIN:VEVENT\r\n'
   icsFormat += `UID:${uid}\r\n`
   icsFormat +=  foldLine(`SUMMARY:${title ? setSummary(title) : title}`) + '\r\n'
